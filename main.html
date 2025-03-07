@@ -7,13 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/c34727ef8e.js" crossorigin="anonymous"></script>
+    <style>
+        
+    </style>
 </head>
 <body class="bg-slate-800 ">
     <section class="max-w-md  min-h-screen mx-auto py-6 px-6 bg-gray-200 rounded-2xl">
       <header>
         <nav class="flex items-center justify-between">
             <div class="logo-cash flex items-center" >
-            <img class="w-12" src="./assets/Group.png" alt="">
+            <img class="w-14 " src="./assets/Group.png" alt="">
             <div>
                 <h1 class="font-bold text-2xl">$ 4500</h1>
                 <p class="text-gray-700">available balance</p>
@@ -21,38 +24,66 @@
         </div>
             <button class="btn"><i class="fa-solid fa-right-to-bracket"></i>  logout</button>
         </nav>
-        <hr>
+        <hr class="mt-3 mb-3">
         <section class="mt-10">
             <h1 class="text-2xl font-bold mb-2">🔥 Welcome to Payoo</h1>
             <P>Enjoy easy and convenient financial services with us. Cashout charge is low and </P>
             <!-- cards design -->
-            <div class="cards text-center grid grid-cols-3 gap-4  mt-4">
+            <div class="cards text-center grid grid-cols-3 gap-4  mt-4 cursor-pointer">
                <!-- box design -->
-              <div class="box border p-4 rounded-md shadow-md">
+              <div class="box border p-4 rounded-md shadow-md">   <!-- box 1 -->
                 <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="wallet1">
+                <h3 class="text-sm">Add Money</h3>
+              </div>
+              <div class="box border p-4 rounded-md shadow-md "> <!-- box 2 -->
+                <img class="w-8 mx-auto" src="./assets/bonus1.png" alt="cashout">
+                <h3 class="text-sm">Cashout</h3>
+              </div>
+              <div class="box border p-4 rounded-md shadow-md"> <!-- box 3 -->
+                <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="wallet1">
+                <h3 class="text-sm">Transfar_money</h3>
+              </div>
+              <div class="box border p-4 rounded-md shadow-md"> <!-- box 4 -->
+                <img class="w-8 mx-auto" src="./assets/send1.png" alt="send1">
+                <h3 class="text-sm">Send Money</h3>
+              </div>
+              <div class="box border p-4 rounded-md shadow-md">  <!-- box 5 -->
+                <img class="w-8 mx-auto" src="./assets/money1.png" alt="wallet1">
                 <h3>Add Money</h3>
               </div>
-              <div class="box border p-4 rounded-md shadow-md">
-                <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="wallet1">
-                <h3>Add Money</h3>
-              </div>
-              <div class="box border p-4 rounded-md shadow-md">
-                <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="wallet1">
-                <h3>Add Money</h3>
-              </div>
-              <div class="box border p-4 rounded-md shadow-md">
-                <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="wallet1">
-                <h3>Add Money</h3>
-              </div>
-              <div class="box border p-4 rounded-md shadow-md">
-                <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="wallet1">
-                <h3>Add Money</h3>
-              </div>
-              <div class="box border p-4 rounded-md shadow-md">
-                <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="wallet1">
+              <div class="box border p-4 rounded-md shadow-md">  <!-- box 6 -->
+                <img class="w-8 mx-auto" src="./assets/purse1.png" alt="wallet1">
                 <h3>Add Money</h3>
               </div>
             </div>
+            <section class="mt-6   max-w-full " >
+                <h2 class="font-bold text-xl">Add Money</h2>
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse rounded-xl">
+                     
+                      <div class="card  w-full max-w-sm shrink-0 shadow-2xl ">
+                        <form class="card-body">
+                          <fieldset class="fieldset font-bold">
+                            <legend class="text-lg text-gray-500">Select A Bank</legend>
+                            <select class="select">
+                                <option disabled selected>Select your Bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="ddbl">DDBL</option>
+                              </select>
+                            <label class="fieldset-label text-lg">Bank Account Number</label>
+                            <input   id="Acount-Number" type="number" class="input" placeholder="Put your Account Number" required />
+                            <label class="fieldset-label text-lg">Amount to Add</label>
+                            <input  id="Acount-pin" type="number" class="input" placeholder="Type your pin " required />
+                            <label class="fieldset-label text-lg ">Pin Number</label>
+                            <input   id="Acount-number" type="number" class="input" placeholder="Enter 4 digit pin number" required />
+                            <button id="login-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none">Add Money</button>
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+            </section>
 
         </section>
       </header>
