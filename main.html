@@ -24,7 +24,7 @@
             <div class="logo-cash flex items-center" >
             <img class="w-14 " src="./assets/Group.png" alt="">
             <div>
-                <h1 class="font-bold text-2xl">$  <span id="main-balance" >4500</span> </h1>
+                <h1 class="font-bold text-2xl">  <span id="main-balance" >4500</span>Tk </h1>
                 <p class="text-gray-700">available balance</p>
             </div>
         </div>
@@ -38,27 +38,27 @@
             <!-- cards design -->
             <div class="cards text-center grid grid-cols-3 gap-4  mt-4 cursor-pointer">
                <!-- box design -->
-              <div id="" class="box border p-4 rounded-md shadow-md">   <!-- box 1 -->
+              <div id="add-money-box" class="box border p-4 rounded-md shadow-md">   <!-- box 1 -->
                 <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="wallet1">
                 <h3 class="text-sm">Add Money</h3>
               </div>
-              <div class="box border p-4 rounded-md shadow-md "> <!-- box 2 -->
+              <div id="Cashout-box" class="box border p-4 rounded-md shadow-md "> <!-- box 2 -->
                 <img class="w-8 mx-auto" src="./assets/bonus1.png" alt="cashout">
                 <h3 class="text-sm">Cashout</h3>
               </div>
-              <div class="box border p-4 rounded-md shadow-md"> <!-- box 3 -->
+              <div  id="transfar-money-box" class="box border p-4 rounded-md shadow-md"> <!-- box 3 -->
                 <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="wallet1">
                 <h3 class="text-sm">Transfar_money</h3>
               </div>
-              <div class="box border p-4 rounded-md shadow-md"> <!-- box 4 -->
+              <div id="send-money-bpx" class="box border p-4 rounded-md shadow-md"> <!-- box 4 -->
                 <img class="w-8 mx-auto" src="./assets/send1.png" alt="send1">
                 <h3 class="text-sm">Send Money</h3>
               </div>
-              <div class="box border p-4 rounded-md shadow-md">  <!-- box 5 -->
+              <div  id="transactions-box" class="box border p-4 rounded-md shadow-md">  <!-- box 5 -->
                 <img class="w-8 mx-auto" src="./assets/money1.png" alt="wallet1">
                 <h3>Transactions</h3>
               </div>
-              <div class="box border p-4 rounded-md shadow-md">  <!-- box 6 -->
+              <div id="pay-bill-box" class="box border p-4 rounded-md shadow-md">  <!-- box 6 -->
                 <img class="w-8 mx-auto" src="./assets/purse1.png" alt="wallet1">
                 <h3>Pay Bill</h3>
               </div>
@@ -97,7 +97,7 @@
         </section>
       </header>
       <!--cashOut section-->
-      <section id="cashout">
+      <section id="cashout" class="mt-5">
         <h2 class="font-bold text-xl text-center underline ">Cashout </h2>
                 <div class="">
                     <div class="hero-content flex-col lg:flex-row-reverse rounded-xl">
@@ -121,6 +121,7 @@
         
       </section>
       
+
     </section>
     <script src="./script/addMoney.js"></script>
     <script src="./script/toggle.js"></script>
